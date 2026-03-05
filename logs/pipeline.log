@@ -5,3 +5,10 @@
 2026-03-01 22:20:36,333 - app.ingestion.api_client - INFO - Starting API request...
 2026-03-01 22:20:38,811 - app.ingestion.api_client - INFO - API request successful.
 2026-03-01 22:20:38,835 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260301_222038.json
+2026-03-04 17:17:11,250 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-04 17:17:22,535 - app.ingestion.api_client - ERROR - Request error occurred: HTTPSConnectionPool(host='restcountries.com', port=443): Read timed out. (read timeout=10)
+2026-03-04 17:18:30,135 - app.processing.validator - INFO - Loading raw file: data/raw\countries_raw_20260301_222038.json
+2026-03-04 17:18:30,175 - app.processing.validator - INFO - Raw data loaded successfully.
+2026-03-04 17:18:30,246 - app.processing.validator - INFO - Converted JSON to Dataframe.
+2026-03-04 17:18:30,247 - app.processing.validator - INFO - Generating Schema Report...
+2026-03-04 17:18:30,267 - app.processing.validator - INFO - Schema report saved to data/processed/schema_report.json
