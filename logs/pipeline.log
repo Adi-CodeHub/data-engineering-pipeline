@@ -37,3 +37,19 @@
 2026-03-05 23:43:24,018 - app.processing.cleaner - INFO - Nested field normalized
 2026-03-05 23:43:24,019 - app.processing.cleaner - INFO - Clean dataset shape: (250, 10)
 2026-03-05 23:43:24,019 - app.processing.cleaner - INFO - Data cleaning completed
+2026-03-06 22:48:05,486 - app.processing.validator - INFO - Loading raw file: data/raw\countries_raw_20260301_222038.json
+2026-03-06 22:48:05,499 - app.processing.validator - INFO - Raw data loaded successfully.
+2026-03-06 22:48:05,536 - app.processing.validator - INFO - Converted JSON to Dataframe.
+2026-03-06 22:48:05,536 - app.processing.validator - INFO - Generating Schema Report...
+2026-03-06 22:48:05,562 - app.processing.validator - INFO - Schema report saved to data/processed/schema_report.json
+2026-03-06 22:48:05,576 - app.processing.cleaner - INFO - selected relevant columns
+2026-03-06 22:48:05,578 - app.processing.cleaner - INFO - Columns Renamed
+2026-03-06 22:48:05,582 - app.processing.cleaner - INFO - Handled missing values
+2026-03-06 22:48:05,583 - app.processing.cleaner - INFO - Nested field normalized
+2026-03-06 22:48:05,583 - app.processing.cleaner - INFO - Clean dataset shape: (250, 10)
+2026-03-06 22:48:05,583 - app.processing.cleaner - INFO - Data cleaning completed
+2026-03-06 22:48:05,600 - app.processing.transformer - INFO - Population density calculated
+2026-03-06 22:48:05,631 - app.processing.transformer - INFO - Region statistics created
+2026-03-06 22:48:05,650 - app.processing.transformer - INFO - Language table created
+2026-03-06 22:48:05,657 - app.processing.transformer - INFO - Currency table created
+2026-03-06 22:48:05,659 - app.processing.transformer - INFO - All transformation completed

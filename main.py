@@ -3,6 +3,7 @@ import os
 from app.ingestion.api_client import APIClient
 from app.processing.validator import DataValidator
 from app.processing.cleaner import DataCleaner
+from app.processing.transformer import DataTransformer
 
 def run_ingestion():
     url = "https://restcountries.com/v3.1/all"
@@ -26,9 +27,19 @@ def run_cleaning(df):
     clean_df.to_csv("data/processed/clean_countries.csv", index=False)
     return clean_df
 
+def run_transformation(clean_df):
+    transformer = DataTransformer(clean_df)
+    countries, regions, languages, currencies = transformer.transform()
+    countries.to_csv("data/processed/countries.csv", index=False)
+    regions.to_csv("data/processed/regions.csv", index=False)
+    languages.to_csv("data/processed/languages.csv", index=False)
+    currencies.to_csv("data/processed/currencies.csv", index=False)
+
+    return countries, regions, languages, currencies
 
 if __name__ == "__main__":
     # run_ingestion()
     # run_validation()
     df= run_validation()
-    run_cleaning(df)
+    clean_df = run_cleaning(df)
+    run_transformation(clean_df)
