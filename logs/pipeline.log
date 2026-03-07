@@ -53,3 +53,46 @@
 2026-03-06 22:48:05,650 - app.processing.transformer - INFO - Language table created
 2026-03-06 22:48:05,657 - app.processing.transformer - INFO - Currency table created
 2026-03-06 22:48:05,659 - app.processing.transformer - INFO - All transformation completed
+2026-03-07 16:09:34,060 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-07 16:09:35,757 - app.ingestion.api_client - INFO - API request successful.
+2026-03-07 16:09:35,779 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260307_160935.json
+2026-03-07 16:09:35,779 - app.processing.validator - INFO - Loading raw file: data/raw\countries_raw_20260307_160935.json
+2026-03-07 16:09:35,796 - app.processing.validator - INFO - Raw data loaded successfully.
+2026-03-07 16:09:35,841 - app.processing.validator - INFO - Converted JSON to Dataframe.
+2026-03-07 16:09:35,841 - app.processing.validator - INFO - Generating Schema Report...
+2026-03-07 16:09:35,870 - app.processing.validator - INFO - Schema report saved to data/processed/schema_report.json
+2026-03-07 16:09:35,896 - app.processing.cleaner - INFO - selected relevant columns
+2026-03-07 16:09:35,896 - app.processing.cleaner - INFO - Columns Renamed
+2026-03-07 16:09:35,908 - app.processing.cleaner - INFO - Handled missing values
+2026-03-07 16:09:35,910 - app.processing.cleaner - INFO - Nested field normalized
+2026-03-07 16:09:35,911 - app.processing.cleaner - INFO - Clean dataset shape: (250, 10)
+2026-03-07 16:09:35,911 - app.processing.cleaner - INFO - Data cleaning completed
+2026-03-07 16:09:35,924 - app.processing.transformer - INFO - Population density calculated
+2026-03-07 16:09:35,962 - app.processing.transformer - INFO - Region statistics created
+2026-03-07 16:09:35,967 - app.processing.transformer - INFO - Language table created
+2026-03-07 16:09:35,977 - app.processing.transformer - INFO - Currency table created
+2026-03-07 16:09:35,977 - app.processing.transformer - INFO - All transformation completed
+2026-03-07 16:12:02,017 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-07 16:12:03,219 - app.ingestion.api_client - INFO - API request successful.
+2026-03-07 16:12:03,219 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260307_161203.json
+2026-03-07 16:12:03,234 - app.processing.validator - INFO - Loading raw file: data/raw\countries_raw_20260307_161203.json
+2026-03-07 16:12:03,249 - app.processing.validator - INFO - Raw data loaded successfully.
+2026-03-07 16:12:03,269 - app.processing.validator - INFO - Converted JSON to Dataframe.
+2026-03-07 16:12:03,269 - app.processing.validator - INFO - Generating Schema Report...
+2026-03-07 16:12:03,274 - app.processing.validator - INFO - Schema report saved to data/processed/schema_report.json
+2026-03-07 16:12:03,274 - app.processing.cleaner - INFO - selected relevant columns
+2026-03-07 16:12:03,288 - app.processing.cleaner - INFO - Columns Renamed
+2026-03-07 16:12:03,290 - app.processing.cleaner - INFO - Handled missing values
+2026-03-07 16:12:03,291 - app.processing.cleaner - INFO - Nested field normalized
+2026-03-07 16:12:03,291 - app.processing.cleaner - INFO - Clean dataset shape: (250, 10)
+2026-03-07 16:12:03,291 - app.processing.cleaner - INFO - Data cleaning completed
+2026-03-07 16:12:03,291 - app.processing.transformer - INFO - Population density calculated
+2026-03-07 16:12:03,307 - app.processing.transformer - INFO - Region statistics created
+2026-03-07 16:12:03,316 - app.processing.transformer - INFO - Language table created
+2026-03-07 16:12:03,319 - app.processing.transformer - INFO - Currency table created
+2026-03-07 16:12:03,319 - app.processing.transformer - INFO - All transformation completed
+2026-03-07 16:12:03,552 - app.storage.database - INFO - Database tables created
+2026-03-07 16:12:03,595 - app.storage.database - INFO - Data loaded into countries
+2026-03-07 16:12:03,629 - app.storage.database - INFO - Data loaded into regions
+2026-03-07 16:12:03,659 - app.storage.database - INFO - Data loaded into languages
+2026-03-07 16:12:03,687 - app.storage.database - INFO - Data loaded into currencies

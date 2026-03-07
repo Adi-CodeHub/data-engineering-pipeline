@@ -4,6 +4,7 @@ from app.ingestion.api_client import APIClient
 from app.processing.validator import DataValidator
 from app.processing.cleaner import DataCleaner
 from app.processing.transformer import DataTransformer
+from app.storage.database import DatabaseManager
 
 def run_ingestion():
     url = "https://restcountries.com/v3.1/all"
@@ -37,9 +38,19 @@ def run_transformation(clean_df):
 
     return countries, regions, languages, currencies
 
+def run_loading(countries, regions, languages, currencies):
+    db = DatabaseManager()
+    db.create_tables()
+    db.load_dataframe(countries, "countries")
+    db.load_dataframe(regions, "regions")
+    db.load_dataframe(languages, "languages")
+    db.load_dataframe(currencies, "currencies")
+    db.close()
+    
+
 if __name__ == "__main__":
-    # run_ingestion()
-    # run_validation()
+    run_ingestion()
     df= run_validation()
     clean_df = run_cleaning(df)
-    run_transformation(clean_df)
+    countries, regions, languages, currencies = run_transformation(clean_df)
+    run_loading(countries, regions, languages, currencies)
