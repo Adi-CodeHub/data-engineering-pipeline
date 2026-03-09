@@ -33,7 +33,7 @@ class ETLPipeline:
         validator.generate_schema_report()
 
         logger.info("Validation completed")
-        return self.df
+        return validator.df
     
     def transform(self, df):
 

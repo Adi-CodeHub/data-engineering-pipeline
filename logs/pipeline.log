@@ -96,3 +96,157 @@
 2026-03-07 16:12:03,629 - app.storage.database - INFO - Data loaded into regions
 2026-03-07 16:12:03,659 - app.storage.database - INFO - Data loaded into languages
 2026-03-07 16:12:03,687 - app.storage.database - INFO - Data loaded into currencies
+2026-03-09 20:45:29,467 - app.processing.elt_pipeline - INFO - ELT Pipeline Started
+2026-03-09 20:45:29,469 - app.processing.elt_pipeline - INFO - ELT Extraction Started
+2026-03-09 20:45:29,470 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:45:31,655 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:45:31,674 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_204531.json
+2026-03-09 20:45:31,676 - app.processing.elt_pipeline - INFO - ELT Extraction Completed
+2026-03-09 20:45:31,677 - app.processing.elt_pipeline - INFO - loading raw data into database
+2026-03-09 20:46:18,768 - app.processing.elt_pipeline - INFO - ELT Pipeline Started
+2026-03-09 20:46:18,769 - app.processing.elt_pipeline - INFO - ELT Extraction Started
+2026-03-09 20:46:18,772 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:46:23,418 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:46:23,431 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_204623.json
+2026-03-09 20:46:23,433 - app.processing.elt_pipeline - INFO - ELT Extraction Completed
+2026-03-09 20:46:23,433 - app.processing.elt_pipeline - INFO - loading raw data into database
+2026-03-09 20:47:29,943 - app.processing.etl_pipeline - INFO - ETL pipeline started
+2026-03-09 20:47:29,949 - app.processing.etl_pipeline - INFO - Starting Extraction Step
+2026-03-09 20:47:29,950 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:47:32,481 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:47:32,495 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_204732.json
+2026-03-09 20:47:32,495 - app.processing.etl_pipeline - INFO - Extraction completed
+2026-03-09 20:47:32,496 - app.processing.etl_pipeline - INFO - Starting Data Validation
+2026-03-09 20:47:32,497 - app.processing.validator - INFO - Loading raw file: data/raw\countries_raw_20260309_204732.json
+2026-03-09 20:47:32,523 - app.processing.validator - INFO - Raw data loaded successfully.
+2026-03-09 20:47:32,567 - app.processing.validator - INFO - Converted JSON to Dataframe.
+2026-03-09 20:47:32,569 - app.processing.validator - INFO - Generating Schema Report...
+2026-03-09 20:47:32,595 - app.processing.validator - INFO - Schema report saved to data/processed/schema_report.json
+2026-03-09 20:47:32,596 - app.processing.etl_pipeline - INFO - Validation completed
+2026-03-09 20:49:51,436 - app.processing.etl_pipeline - INFO - ETL pipeline started
+2026-03-09 20:49:51,436 - app.processing.etl_pipeline - INFO - Starting Extraction Step
+2026-03-09 20:49:51,436 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:49:53,355 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:49:53,364 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_204953.json
+2026-03-09 20:49:53,364 - app.processing.etl_pipeline - INFO - Extraction completed
+2026-03-09 20:49:53,366 - app.processing.etl_pipeline - INFO - Starting Data Validation
+2026-03-09 20:49:53,368 - app.processing.validator - INFO - Loading raw file: data/raw\countries_raw_20260309_204953.json
+2026-03-09 20:49:53,385 - app.processing.validator - INFO - Raw data loaded successfully.
+2026-03-09 20:49:53,410 - app.processing.validator - INFO - Converted JSON to Dataframe.
+2026-03-09 20:49:53,577 - app.processing.validator - INFO - Generating Schema Report...
+2026-03-09 20:49:53,649 - app.processing.validator - INFO - Schema report saved to data/processed/schema_report.json
+2026-03-09 20:49:53,662 - app.processing.etl_pipeline - INFO - Validation completed
+2026-03-09 20:49:53,672 - app.processing.etl_pipeline - INFO - Starting Data Transformation
+2026-03-09 20:49:53,704 - app.processing.cleaner - INFO - selected relevant columns
+2026-03-09 20:49:53,707 - app.processing.cleaner - INFO - Columns Renamed
+2026-03-09 20:49:53,710 - app.processing.cleaner - INFO - Handled missing values
+2026-03-09 20:49:53,713 - app.processing.cleaner - INFO - Nested field normalized
+2026-03-09 20:49:53,715 - app.processing.cleaner - INFO - Clean dataset shape: (250, 10)
+2026-03-09 20:49:53,718 - app.processing.cleaner - INFO - Data cleaning completed
+2026-03-09 20:49:53,724 - app.processing.transformer - INFO - Population density calculated
+2026-03-09 20:49:53,746 - app.processing.transformer - INFO - Region statistics created
+2026-03-09 20:49:53,756 - app.processing.transformer - INFO - Language table created
+2026-03-09 20:49:53,760 - app.processing.transformer - INFO - Currency table created
+2026-03-09 20:49:53,761 - app.processing.transformer - INFO - All transformation completed
+2026-03-09 20:49:53,762 - app.processing.etl_pipeline - INFO - Transformation Completed
+2026-03-09 20:49:53,765 - app.processing.etl_pipeline - INFO - Starting Loading data in DB
+2026-03-09 20:49:53,776 - app.storage.database - INFO - Database tables created
+2026-03-09 20:49:53,802 - app.storage.database - INFO - Data loaded into countries
+2026-03-09 20:49:53,820 - app.storage.database - INFO - Data loaded into regions
+2026-03-09 20:49:53,833 - app.storage.database - INFO - Data loaded into languages
+2026-03-09 20:49:53,842 - app.storage.database - INFO - Data loaded into currencies
+2026-03-09 20:49:53,843 - app.processing.etl_pipeline - INFO - Loading Data completed
+2026-03-09 20:49:53,844 - app.processing.etl_pipeline - INFO - ETL pipeline finished successfully
+2026-03-09 20:49:53,850 - app.processing.elt_pipeline - INFO - ELT Pipeline Started
+2026-03-09 20:49:53,852 - app.processing.elt_pipeline - INFO - ELT Extraction Started
+2026-03-09 20:49:53,854 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:49:56,045 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:49:56,152 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_204956.json
+2026-03-09 20:49:56,160 - app.processing.elt_pipeline - INFO - ELT Extraction Completed
+2026-03-09 20:49:56,161 - app.processing.elt_pipeline - INFO - loading raw data into database
+2026-03-09 20:50:48,989 - app.processing.etl_pipeline - INFO - ETL pipeline started
+2026-03-09 20:50:48,990 - app.processing.etl_pipeline - INFO - Starting Extraction Step
+2026-03-09 20:50:48,991 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:50:51,049 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:50:51,200 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_205051.json
+2026-03-09 20:50:51,217 - app.processing.etl_pipeline - INFO - Extraction completed
+2026-03-09 20:50:51,228 - app.processing.etl_pipeline - INFO - Starting Data Validation
+2026-03-09 20:50:51,241 - app.processing.validator - INFO - Loading raw file: data/raw\countries_raw_20260309_205051.json
+2026-03-09 20:50:51,259 - app.processing.validator - INFO - Raw data loaded successfully.
+2026-03-09 20:50:51,323 - app.processing.validator - INFO - Converted JSON to Dataframe.
+2026-03-09 20:50:51,339 - app.processing.validator - INFO - Generating Schema Report...
+2026-03-09 20:50:51,374 - app.processing.validator - INFO - Schema report saved to data/processed/schema_report.json
+2026-03-09 20:50:51,377 - app.processing.etl_pipeline - INFO - Validation completed
+2026-03-09 20:50:51,383 - app.processing.etl_pipeline - INFO - Starting Data Transformation
+2026-03-09 20:50:51,388 - app.processing.cleaner - INFO - selected relevant columns
+2026-03-09 20:50:51,389 - app.processing.cleaner - INFO - Columns Renamed
+2026-03-09 20:50:51,392 - app.processing.cleaner - INFO - Handled missing values
+2026-03-09 20:50:51,395 - app.processing.cleaner - INFO - Nested field normalized
+2026-03-09 20:50:51,405 - app.processing.cleaner - INFO - Clean dataset shape: (250, 10)
+2026-03-09 20:50:51,410 - app.processing.cleaner - INFO - Data cleaning completed
+2026-03-09 20:50:51,412 - app.processing.transformer - INFO - Population density calculated
+2026-03-09 20:50:51,431 - app.processing.transformer - INFO - Region statistics created
+2026-03-09 20:50:51,438 - app.processing.transformer - INFO - Language table created
+2026-03-09 20:50:51,448 - app.processing.transformer - INFO - Currency table created
+2026-03-09 20:50:51,452 - app.processing.transformer - INFO - All transformation completed
+2026-03-09 20:50:51,463 - app.processing.etl_pipeline - INFO - Transformation Completed
+2026-03-09 20:50:51,465 - app.processing.etl_pipeline - INFO - Starting Loading data in DB
+2026-03-09 20:50:51,468 - app.storage.database - INFO - Database tables created
+2026-03-09 20:50:51,491 - app.storage.database - INFO - Data loaded into countries
+2026-03-09 20:50:51,510 - app.storage.database - INFO - Data loaded into regions
+2026-03-09 20:50:51,524 - app.storage.database - INFO - Data loaded into languages
+2026-03-09 20:50:51,540 - app.storage.database - INFO - Data loaded into currencies
+2026-03-09 20:50:51,547 - app.processing.etl_pipeline - INFO - Loading Data completed
+2026-03-09 20:50:51,551 - app.processing.etl_pipeline - INFO - ETL pipeline finished successfully
+2026-03-09 20:50:51,553 - app.processing.elt_pipeline - INFO - ELT Pipeline Started
+2026-03-09 20:50:51,556 - app.processing.elt_pipeline - INFO - ELT Extraction Started
+2026-03-09 20:50:51,557 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:50:54,695 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:50:54,708 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_205054.json
+2026-03-09 20:50:54,708 - app.processing.elt_pipeline - INFO - ELT Extraction Completed
+2026-03-09 20:50:54,710 - app.processing.elt_pipeline - INFO - loading raw data into database
+2026-03-09 20:52:19,065 - app.processing.etl_pipeline - INFO - ETL pipeline started
+2026-03-09 20:52:19,068 - app.processing.etl_pipeline - INFO - Starting Extraction Step
+2026-03-09 20:52:19,073 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:52:21,487 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:52:21,592 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_205221.json
+2026-03-09 20:52:21,596 - app.processing.etl_pipeline - INFO - Extraction completed
+2026-03-09 20:52:21,750 - app.processing.etl_pipeline - INFO - Starting Data Validation
+2026-03-09 20:52:21,794 - app.processing.validator - INFO - Loading raw file: data/raw\countries_raw_20260309_205221.json
+2026-03-09 20:52:21,885 - app.processing.validator - INFO - Raw data loaded successfully.
+2026-03-09 20:52:21,955 - app.processing.validator - INFO - Converted JSON to Dataframe.
+2026-03-09 20:52:21,972 - app.processing.validator - INFO - Generating Schema Report...
+2026-03-09 20:52:22,051 - app.processing.validator - INFO - Schema report saved to data/processed/schema_report.json
+2026-03-09 20:52:22,063 - app.processing.etl_pipeline - INFO - Validation completed
+2026-03-09 20:52:22,077 - app.processing.etl_pipeline - INFO - Starting Data Transformation
+2026-03-09 20:52:22,088 - app.processing.cleaner - INFO - selected relevant columns
+2026-03-09 20:52:22,115 - app.processing.cleaner - INFO - Columns Renamed
+2026-03-09 20:52:22,122 - app.processing.cleaner - INFO - Handled missing values
+2026-03-09 20:52:22,138 - app.processing.cleaner - INFO - Nested field normalized
+2026-03-09 20:52:22,175 - app.processing.cleaner - INFO - Clean dataset shape: (250, 10)
+2026-03-09 20:52:22,187 - app.processing.cleaner - INFO - Data cleaning completed
+2026-03-09 20:52:22,226 - app.processing.transformer - INFO - Population density calculated
+2026-03-09 20:52:22,248 - app.processing.transformer - INFO - Region statistics created
+2026-03-09 20:52:22,341 - app.processing.transformer - INFO - Language table created
+2026-03-09 20:52:22,387 - app.processing.transformer - INFO - Currency table created
+2026-03-09 20:52:22,426 - app.processing.transformer - INFO - All transformation completed
+2026-03-09 20:52:22,440 - app.processing.etl_pipeline - INFO - Transformation Completed
+2026-03-09 20:52:22,469 - app.processing.etl_pipeline - INFO - Starting Loading data in DB
+2026-03-09 20:52:22,523 - app.storage.database - INFO - Database tables created
+2026-03-09 20:52:22,554 - app.storage.database - INFO - Data loaded into countries
+2026-03-09 20:52:22,588 - app.storage.database - INFO - Data loaded into regions
+2026-03-09 20:52:22,605 - app.storage.database - INFO - Data loaded into languages
+2026-03-09 20:52:22,628 - app.storage.database - INFO - Data loaded into currencies
+2026-03-09 20:52:22,634 - app.processing.etl_pipeline - INFO - Loading Data completed
+2026-03-09 20:52:22,640 - app.processing.etl_pipeline - INFO - ETL pipeline finished successfully
+2026-03-09 20:52:22,649 - app.processing.elt_pipeline - INFO - ELT Pipeline Started
+2026-03-09 20:52:22,650 - app.processing.elt_pipeline - INFO - ELT Extraction Started
+2026-03-09 20:52:22,653 - app.ingestion.api_client - INFO - Starting API request...
+2026-03-09 20:52:24,826 - app.ingestion.api_client - INFO - API request successful.
+2026-03-09 20:52:24,836 - app.ingestion.api_client - INFO - Raw data saved at data/raw/countries_raw_20260309_205224.json
+2026-03-09 20:52:24,837 - app.processing.elt_pipeline - INFO - ELT Extraction Completed
+2026-03-09 20:52:24,839 - app.processing.elt_pipeline - INFO - loading raw data into database
+2026-03-09 20:52:24,865 - app.processing.elt_pipeline - INFO - Raw data loaded into raw_countries table
+2026-03-09 20:52:24,874 - app.processing.elt_pipeline - INFO - Starting SQL Transformation
+2026-03-09 20:52:24,883 - app.processing.elt_pipeline - INFO - SQL Transformation Completed
+2026-03-09 20:52:24,885 - app.processing.elt_pipeline - INFO - ELT Pipeline Completed

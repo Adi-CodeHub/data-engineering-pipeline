@@ -3,7 +3,7 @@ from app.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-DB_PATH = "data/etl.db"
+DB_PATH = "data/database.db"
 
 class DatabaseManager:
     
@@ -51,6 +51,12 @@ class DatabaseManager:
             currency TEXT
         )
         """)
+
+        cursor.execute(""" 
+                       CREATE TABLE IF NOT EXISTS raw_countries(
+                       data TEXT
+                       )
+                       """)
         
         self.conn.commit()
         
