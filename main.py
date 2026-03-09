@@ -1,11 +1,11 @@
 from app.processing.etl_pipeline import ETLPipeline
 from app.processing.elt_pipeline import ELTPipeline
+from app.utils.config import settings
 
 def main():
-    url = "https://restcountries.com/v3.1/all"
-    etl = ETLPipeline(url)
-    elt = ELTPipeline(url)
+    etl = ETLPipeline(settings.API_URL)
     etl.run()
+    elt = ELTPipeline(settings.API_URL)
     elt.run()
 
 

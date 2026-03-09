@@ -1,9 +1,10 @@
 import sqlite3
 from app.utils.logger import get_logger
+from app.utils.config import settings
 
 logger = get_logger(__name__)
 
-DB_PATH = "data/database.db"
+DB_PATH = settings.DATABASE_PATH
 
 class DatabaseManager:
     
