@@ -1,5 +1,5 @@
-from app.processing.etl_pipeline import ETLPipeline
-from app.processing.elt_pipeline import ELTPipeline
+from app.pipelines.etl_pipeline import ETLPipeline
+from app.pipelines.elt_pipeline import ELTPipeline
 from app.utils.config import settings
 
 def main():
